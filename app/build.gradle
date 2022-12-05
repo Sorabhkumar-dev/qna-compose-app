@@ -7,16 +7,16 @@ plugins {
 
 android {
     namespace 'com.sorabh.qnaapp'
-    compileSdk 33
+    compileSdk compileSdkVersion
 
     defaultConfig {
         applicationId "com.sorabh.qnaapp"
-        minSdk 21
-        targetSdk 33
+        minSdk minSdkVersion
+        targetSdk targetSdkVersion
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.compileSdkVersionAndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
         }
